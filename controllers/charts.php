@@ -53,6 +53,7 @@ class Charts extends CI_Controller {
 		
 		// we can user credits option to make a link to the source article. 
 		// it's possible to pass an object instead of array (but object will be converted to array by the lib)
+		$credits = new stdclass;//i try without this, i got an error
 		$credits->href = 'http://www.internetworldstats.com/stats7.htm';
 		$credits->text = "Article on Internet Wold Stats";
 		$this->highcharts->set_credits($credits);
